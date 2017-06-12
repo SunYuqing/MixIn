@@ -6,17 +6,15 @@
         
         vue + axios + vue-router + webpack 
 
-## 项目截图
+### 项目截图
 
-    ![mixin](proImg/mixIn-1.jpg)
-    ![mixin](proImg/mixIn-2.jpg)
-    ![mixin](proImg/mixIn-3.jpg)
-        
-        
+   ![项目截图](proImg/mixIn-1.jpg)
+   ![项目截图](proImg/mixIn-2.jpg)
+   ![项目截图](proImg/mixIn-3.jpg)
 
-## 在线demo
+### 在线预览
 
-    [demo演示](sunyuqing.coding.me/mixIn)        
+   [在线demo](http://sunyuqing.coding.me/mixIn)             
 
 ## Build Setup
 
