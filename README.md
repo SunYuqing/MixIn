@@ -8,15 +8,15 @@
 
 ## 项目截图
 
-        ![mixin](proImg/mixIn-1.jpg)
-        ![mixin](proImg/mixIn-2.jpg)
-        ![mixin](proImg/mixIn-3.jpg)
+    ![mixin](proImg/mixIn-1.jpg)
+    ![mixin](proImg/mixIn-2.jpg)
+    ![mixin](proImg/mixIn-3.jpg)
         
         
 
 ## 在线demo
 
-        [demo演示](sunyuqing.coding.me/mixIn)        
+    [demo演示](sunyuqing.coding.me/mixIn)        
 
 ## Build Setup
 
