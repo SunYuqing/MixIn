@@ -1,0 +1,41 @@
+1.如何动态绑定图片：
+    在项目中遇到需要动态的改变图片路径，图片路径并非是从后台获取过来的数据。
+    因此在data中必须用require加载，否则会当成字符串来处理。
+    或者把图片放在static文件夹下。两种我都试过可以，后来因为第二种处理路径简单一些就采用第二种方式了。
+2.本来想把轮播图使用Vue的过渡效果会更好一些，可是不知道是不是因为Vue不支持原生的轮播的原因一直没有成功，
+    后来又想到使用饿了么前端的mint-ui里的swipe，无奈bug怎么解决也解决不了。（第一次用还不知道怎么使用）
+    暂时放弃轮播的过场动画，等有时间再弄，不能把时间一直耗在这里了。（ps: 已安装mint-ui和babel的一个小插件）
+3.本项目所有图标均来自IconFont阿里图标库。
+4.standard/object-curly-even-spacing eslint的这个错误是指大括号内两边都需要空格。
+5.aixos
+    get请求的传参和vue-resource的$http不一样，需要params对象，而后者直接写在一个{}中就可以了。
+6.luck组件中的头部图标没有完成居中对齐 =========>【已解决！！！！见下面】
+  <div>
+    <img src="1.png">
+    <p>返回</p>
+  </div>
+  这种情况下的垂直居中没有实现。
+7. 又遇见一个坑。chrome竟然没有办法显示背景图片。这个问题困扰了我好久，一直以为是Vue的原因。在stackover上才发现
+    竟然是chrome个别版本无法识别url 后面的空格，即url需要连着（）写才识别。而偏偏eslint这样写会报错。暂时只能把背景图
+    当做img标签使用了。
+
+    关于解决6中图片文字垂直居中问题的方案:
+                            ----方案来源于https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
+    html:
+        <div class="outer">
+            <span class="helper"></span>  <!--设置一个帮助的元素，可以使vertical-align生效，这里是重点-->
+            <img width="16" height="16" class="img">
+            <span class="text">实现文字图片垂直居中对齐</span>
+        </div>
+    css：
+        .outer
+            width: 100%
+            height: 50px
+            .helper
+                display: inline-block
+                height: 100%
+                vertical-align: middle
+            .img
+                vertical-align: middle
+            .text
+                vertical-algin: middle
