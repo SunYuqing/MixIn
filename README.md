@@ -8,9 +8,9 @@
 
 ### 项目截图
 
-   ![项目截图](proImg/mixIn-1.jpg)
-   ![项目截图](proImg/mixIn-2.jpg)
-   ![项目截图](proImg/mixIn-3.jpg)
+    <img src="proImg/mixIn-1.jpg" width = "300" height = "533" align=center />
+    <img src="proImg/mixIn-2.jpg" width = "300" height = "533" align=center />
+    <img src="proImg/mixIn-3.jpg" width = "300" height = "533" align=center />
 
 ### 在线预览
 
